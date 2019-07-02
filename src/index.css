@@ -248,4 +248,14 @@ body {
     flex-wrap: wrap;
     height: auto;
   }
+  .Menu {
+    width: 100%;
+    text-align: center;
+  }
+  .logo {
+    margin: 0 auto;
+  }
+  .Menu li {
+    padding: 0px 12px;
+  }
 }
