@@ -261,7 +261,7 @@ body {
     padding: 0px 5px;
   }
   .search.icon {
-    position: relative;
-    right: 10px;
+    position: relative !important;
+    right: 10px !important;
   }
 }
