@@ -171,6 +171,53 @@ body {
 .footerInfo strong {
   font-size: 18px;
 }
+.container {
+  padding: 80px 0 30px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.promos p {
+  margin: 0 auto;
+  
+  padding: 20px 30px;
+  font-size: 20px;
+  text-align: center;
+}
+.collectionGrid {
+  display: flex;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.collectionGridItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 250px;
+  box-sizing: border-box;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.imgProductGrid {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+  opacity: .7;
+  transition: all .5s;
+}
+.collectionGridItem:hover .imgProductGrid {
+  width: 120%;
+  height: 120%;
+}
+.collectionGridName {
+  position: relative;
+  z-index: 1;
+}
 @media(min-width:1025px) {
   .productGridItem:hover .productMask {
     opacity: 1;
@@ -232,6 +279,9 @@ body {
   .title {
     font-size: 27px;
   }
+  .collectionGridItem {
+    width: 46%;
+  }
 }
 @media(max-width:575px) {
   .arrow {
@@ -263,5 +313,11 @@ body {
   .search.icon {
     position: relative !important;
     right: 10px !important;
+  }
+  .img-slidder {
+    height: 180px;
+  }
+  .collectionGridItem {
+    width: 100%;
   }
 }

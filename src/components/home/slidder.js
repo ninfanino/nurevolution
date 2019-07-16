@@ -1,4 +1,5 @@
 import React from "react"
+import { NavLink } from "react-router-dom";
 
 import makeCarousel from 'react-reveal/makeCarousel';
 import Slide from 'react-reveal/Slide';
@@ -20,28 +21,34 @@ const Slidder = () => {
     return (
         <Carousel defaultWait={100000} maxTurns={300}>
             <Slide right>
-                <div>
-                    <img className="img-slidder" src="/images/slidder1.jpg" alt="NuRevolution" />
-                    <div className="txt-caption">
-                        <div className="title-slidder">Wellcome to NUrevolutioninc +20 years revolutionizing the way professional nail,hand & feet beauty industry build their products.</div>
+                <NavLink to="/promo">
+                    <div>
+                        <img className="img-slidder" src="/images/slidder1.jpg" alt="NuRevolution" />
+                        <div className="txt-caption">
+                            <div className="title-slidder">Wellcome to NUrevolutioninc +20 years revolutionizing the way professional nail,hand & feet beauty industry build their products.</div>
+                        </div>
                     </div>
-                </div>
+                </NavLink>
             </Slide>
             <Slide right>
-                <div>
-                    <img className="img-slidder" src="/images/slidder2.jpg" alt="NuRevolution" />
-                    <div className="txt-caption">
-                        <div className="title-slidder">Wellcome to NUrevolutioninc +20 years revolutionizing the way professional nail,hand & feet beauty industry build their products.</div>
+                <NavLink to="/promo">
+                    <div>
+                        <img className="img-slidder" src="/images/slidder2.jpg" alt="NuRevolution" />
+                        <div className="txt-caption">
+                            <div className="title-slidder">Wellcome to NUrevolutioninc +20 years revolutionizing the way professional nail,hand & feet beauty industry build their products.</div>
+                        </div>
                     </div>
-                </div>
+                </NavLink>
             </Slide>
             <Slide right>
-                <div>
-                    <img className="img-slidder" src="/images/slidder3.jpg" alt="NuRevolution" />
-                    <div className="txt-caption">
-                        <div className="title-slidder">Wellcome to NUrevolutioninc +20 years revolutionizing the way professional nail,hand & feet beauty industry build their products.</div>
+                <NavLink to="/promo">
+                    <div>
+                        <img className="img-slidder" src="/images/slidder3.jpg" alt="NuRevolution" />
+                        <div className="txt-caption">
+                            <div className="title-slidder">Wellcome to NUrevolutioninc +20 years revolutionizing the way professional nail,hand & feet beauty industry build their products.</div>
+                        </div>
                     </div>
-                </div>
+                </NavLink>
             </Slide>
         </Carousel>
     )
