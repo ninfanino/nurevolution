@@ -8,7 +8,7 @@ import Slide from 'react-reveal/Slide';
 const Slidder = () => {
     
     const CarouselUI = ({ position, handleClick, children }) => (
-        <div className="slidder container">
+        <div className="slidder">
             <div className="content-slidder">
                 {children}
                 <div className="arrow a-left" onClick={handleClick} data-position={position - 1}>{'<'}</div>

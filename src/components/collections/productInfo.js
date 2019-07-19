@@ -1,14 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const ProductLine = () => {
+const ProductInfo = () => {
     const collection = [
-        { name:'Product Name'},
-        { name:'Product Name'},
-        { name:'Product Name'},
-        { name:'Product Name'},
-        { name:'Product Name'},
-        { name:'Product Name'},
         { name:'Product Name'},
         { name:'Product Name'},
         { name:'Product Name'},
@@ -36,12 +30,19 @@ const ProductLine = () => {
 
             <div className="container">
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis gravida blandit. Proin molestie finibus felis, quis placerat erat volutpat nec. Praesent ultricies enim aliquam, ullamcorper ex id, convallis augue. In dui purus, gravida sit amet ante gravida, ultricies eleifend quam. Aenean rhoncus eros nunc, sit amet viverra sapien hendrerit cursus. Morbi et scelerisque sem, eget vulputate metus. Sed sem urna, porttitor id tortor nec, eleifend egestas neque.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 </p>
 
-                <div className="title">Collections</div>
+                <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/Xs6hnsPAAEY?playlist=Xs6hnsPAAEY&amp;iv_load_policy=3&amp;enablejsapi=1&amp;disablekb=1&amp;autoplay=0&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;wmode=transparent&amp;origin=https%3A%2F%2Fwww.nurevolutioninc.com&amp;widgetid=3" id="widget4" ></iframe>
+                
                 <div className="collectionGrid">
                     {itemsCollection}
+                </div>
+
+                <div className="btnsContainer">
+                    <div className="btnRound">Tutorials</div>
+
+                    <div className="btnRound">Marketing Material</div>
                 </div>
             </div>
 
@@ -50,4 +51,4 @@ const ProductLine = () => {
     )
 }
 
-export default ProductLine
+export default ProductInfo
