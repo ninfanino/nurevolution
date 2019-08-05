@@ -24,9 +24,7 @@ const Slidder = () => {
                 <NavLink to="/promo">
                     <div>
                         <img className="img-slidder" src="/images/slidder1.jpg" alt="NuRevolution" />
-                        <div className="txt-caption">
-                            <div className="title-slidder">Wellcome to NUrevolutioninc +20 years revolutionizing the way professional nail,hand & feet beauty industry build their products.</div>
-                        </div>
+                        
                     </div>
                 </NavLink>
             </Slide>
@@ -34,9 +32,7 @@ const Slidder = () => {
                 <NavLink to="/promo">
                     <div>
                         <img className="img-slidder" src="/images/slidder2.jpg" alt="NuRevolution" />
-                        <div className="txt-caption">
-                            <div className="title-slidder">Wellcome to NUrevolutioninc +20 years revolutionizing the way professional nail,hand & feet beauty industry build their products.</div>
-                        </div>
+                        
                     </div>
                 </NavLink>
             </Slide>
@@ -44,9 +40,15 @@ const Slidder = () => {
                 <NavLink to="/promo">
                     <div>
                         <img className="img-slidder" src="/images/slidder3.jpg" alt="NuRevolution" />
-                        <div className="txt-caption">
-                            <div className="title-slidder">Wellcome to NUrevolutioninc +20 years revolutionizing the way professional nail,hand & feet beauty industry build their products.</div>
-                        </div>
+                        
+                    </div>
+                </NavLink>
+            </Slide>
+            <Slide right>
+                <NavLink to="/promo">
+                    <div>
+                        <img className="img-slidder" src="/images/slidder4.jpg" alt="NuRevolution" />
+                        
                     </div>
                 </NavLink>
             </Slide>

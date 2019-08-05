@@ -7,7 +7,7 @@ const Products = () => (
         <div className="productsGrid">
             <NavLink to="/product-line/1">
                 <div className="productGridItem">
-                    <img src="/images/product-home1.jpg" className="imgProductHome" alt="Gel" />
+                    <img src="/images/product-home1.gif" className="imgProductHome" alt="Gel" />
                     <div className="productMask">
                         <div className="nameProduct">Gel</div>
                     </div>
@@ -16,18 +16,18 @@ const Products = () => (
 
             <NavLink to="/product-line/2">
                 <div className="productGridItem">
-                    <img src="/images/product-home2.jpg" className="imgProductHome" alt="Gel" />
+                    <img src="/images/product-home2.gif" className="imgProductHome" alt="Gel" />
                     <div className="productMask">
-                        <div className="nameProduct">Gel</div>
+                        <div className="nameProduct">Dipping<br/>power</div>
                     </div>
                 </div>
             </NavLink>
 
             <NavLink to="/product-line/3">
                 <div className="productGridItem">
-                    <img src="/images/product-home3.jpg" className="imgProductHome" alt="Gel" />
+                    <img src="/images/product-home3.gif" className="imgProductHome" alt="Gel" />
                     <div className="productMask">
-                        <div className="nameProduct">Gel</div>
+                        <div className="nameProduct">Bare soak</div>
                     </div>
                 </div>
             </NavLink>

@@ -92,7 +92,7 @@ body {
 .title {
   color: #a1a1a1;
   font-size: 36px;
-  margin: 20px 0;
+  margin: 50px 0;
   padding: 0px 30px;
   text-align: center;
 }
@@ -111,12 +111,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: rgba(255,255,255,.75);
-  opacity: 0;
+  opacity: .8;
   transition: all 0.15s linear;
 }
 .imgProductHome {
@@ -126,8 +127,9 @@ body {
   transition: all 0.15s linear;
 }
 .nameProduct {
-  color: #706865;
-  font-size: 20px;
+  color: #000;
+  text-align: center;
+  font-size: 26px;
 }
 .Footer {
   background: #575757;
@@ -255,9 +257,7 @@ body {
   .productGridItem:hover .productMask {
     opacity: 1;
   }
-  .productGridItem:hover .imgProductHome {
-    width: 110%;
-  }
+  
 }
 @media(max-width:1024px) {
   .productGridItem .productMask {
