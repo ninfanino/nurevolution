@@ -12,8 +12,8 @@ function App() {
     <Router>
       <Route path="/" exact component={Home} />
       <Route path="/promo" component={Promo} />
-      <Route path="/product-line/:id" component={ProductCollection} />
-      <Route path="/product/:id" component={ProductDetails} />
+      <Route path="/product-line/:name" component={ProductCollection} />
+      <Route path="/product/:name/:id" component={ProductDetails} />
     </Router>
   );
 }
