@@ -44,52 +44,109 @@ const ProductLine = (props) => {
             ],
             'dipping-power' : [
                 { 
-                    name:'Collections NUdippingpwder-00 Diamond',
-                    photo: 'collectionsNUdippingpwder-00diamond.jpg'
+                    name:'Magical Magnetic',
+                    photo: 'magical-magnetic.png',
+                    url: 'magical-magnetic'
                 },
                 { 
-                    name:'Collections NUdippingpwder-01 Trio',
-                    photo: 'collectionsNUdippingpwder-01trio.jpg'
+                    name:'Twinkle',
+                    photo: 'twinkle.png',
+                    url: 'twinkle'
                 },
                 { 
-                    name:'Collections NUdippingpwder-02 Pure Chrome',
-                    photo: 'collectionsNUdippingpwder-02purechrome.jpg'
+                    name:'Diamond',
+                    photo: 'diamond.png',
+                    url: 'diamond'
                 },
                 { 
-                    name:'Collections NUdippingpwder-03 High Voltage',
-                    photo: 'collectionsNUdippingpwder-03highvoltage.jpg'
+                    name:'High Voltage',
+                    photo: 'high-voltage.png',
+                    url: 'high-voltage'
                 },
                 { 
-                    name:'Collections NUdippingpwder-05 Nudy Nude',
-                    photo: 'collectionsNUdippingpwder-05nudynude.jpg'
+                    name:'Jolly',
+                    photo: 'jolly.png',
+                    url: 'jolly'
                 },
                 { 
-                    name:'Collections NUdippingpwder06 Pearl',
-                    photo: 'collectionsNUdippingpwder-06pearl.jpg'
+                    name:'Nudy Nude',
+                    photo: 'nudy-nude.png',
+                    url: 'nudy-nude'
                 },
                 { 
-                    name:'Collections NUdippingpwder-07 Holo Chrome',
-                    photo: 'collectionsNUdippingpwder-07holochrome.jpg'
+                    name:'Opal',
+                    photo: 'opal.png',
+                    url: 'opal'
                 },
                 { 
-                    name:'Collections NUdippingpwder-08 Temperature',
-                    photo: 'collectionsNUdippingpwder-08Temperature.jpg'
+                    name:'Starlet',
+                    photo: 'starlet.png',
+                    url: 'starlet'
                 },
                 { 
-                    name:'Collections NUdippingpwder-09 Solar',
-                    photo: 'collectionsNUdippingpwder-09solar.jpg'
+                    name:'Temperature',
+                    photo: 'temperature.png',
+                    url: 'temperature'
                 },
                 { 
-                    name:'Collections NUdippingpwder-10 Jolly',
-                    photo: 'collectionsNUdippingpwder-10jolly.jpg'
+                    name:'Solar Glitter',
+                    photo: 'solar-glitter.png',
+                    url: 'solar-glitter'
                 },
                 { 
-                    name:'Collections NUdippingpwder-11 opal',
-                    photo: 'collectionsNUdippingpwder-11opal.jpg'
+                    name:'Electro Glow',
+                    photo: 'electro-glow.png',
+                    url: 'electro-glow'
                 },
                 { 
-                    name:'Collections NUdippingpwder-12 Starlet',
-                    photo: 'collectionsNUdippingpwder-12starlet.jpg'
+                    name:'Nude Glow',
+                    photo: 'nude-glow.png',
+                    url: 'nude-glow'
+                },
+                { 
+                    name:'Holo Chrome',
+                    photo: 'holo-chrome.png',
+                    url: 'holo-chrome'
+                },
+                { 
+                    name:'Bubble Tea',
+                    photo: 'nude-glow.png',
+                    url: 'nude-glow'
+                },
+                { 
+                    name:'Dream Collection',
+                    photo: 'dream.png',
+                    url: 'dream'
+                },
+                { 
+                    name:'Lollipop',
+                    photo: 'lollipop.png',
+                    url: 'lollipop'
+                },
+                { 
+                    name:'Loose Glitter',
+                    photo: 'loose-glitter.png',
+                    url: 'loose-glitter'
+                },
+                { 
+                    name:'Ombre',
+                    photo: 'loose-glitter.png',
+                    url: 'ombre'
+                },
+                { 
+                    name:'Pearl',
+                    photo: 'pearl.png',
+                    url: 'pearl'
+                },
+                { 
+                    name:'Pure Chrome',
+                    photo: 'gold-pure.png',
+                    url: 'pure-chrome'
+                },
+                { 
+                    name:'Red Soul',
+                    photo: 'red-soul.png',
+                    url: 'red-soul'
                 }
             ],
             'bare-soak' : [
@@ -107,8 +164,11 @@ const ProductLine = (props) => {
     let itemsCollection = collection[line].map((item, index) => {
         return (
             <div className="collectionGridItem" key={index}>
-                <NavLink to={"/product/" + line + "/" + index}>
-                    <img src={"/images/product-lines/" + line + "/" + item['photo'] } className="imgProductGrid" alt="Product Line" />
+                <NavLink to={"/product/" + line + "/" + item['url']}>
+                    <div className="imgProductGrid">
+                        <img src={"/images/product-lines/" + line + "/" + item['photo'] } alt={ item['name'] } />
+                    </div>
+                    
                     <div className="collectionGridName">
                         { item['name'] }
                     </div>
@@ -122,10 +182,7 @@ const ProductLine = (props) => {
             <img className="img-slidder" src={"/images/product-lines/" + line + "/mainimage.jpg"} alt="NuRevolution" />
 
             <div className="container">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis gravida blandit. Proin molestie finibus felis, quis placerat erat volutpat nec. Praesent ultricies enim aliquam, ullamcorper ex id, convallis augue. In dui purus, gravida sit amet ante gravida, ultricies eleifend quam. Aenean rhoncus eros nunc, sit amet viverra sapien hendrerit cursus. Morbi et scelerisque sem, eget vulputate metus. Sed sem urna, porttitor id tortor nec, eleifend egestas neque.
-                </p>
-
+                
                 <div className="title">Collections</div>
                 <div className="collectionGrid">
                     {itemsCollection}

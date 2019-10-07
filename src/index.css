@@ -177,7 +177,7 @@ body {
   max-width: 1170px;
   margin: 0 auto;
 }
-.promos p {
+.container p {
   margin: 0 auto;
   
   padding: 20px 30px;
@@ -195,7 +195,6 @@ body {
   justify-content: center;
   align-items: center;
   width: 30%;
-  height: 250px;
   box-sizing: border-box;
   margin: 10px;
   position: relative;
@@ -204,25 +203,25 @@ body {
 }
 .collectionGridItem a {
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 350px;
+  text-align: center;
   color: #000;
   text-decoration: none;
 }
 .imgProductGrid {
   width: 100%;
-  height: 250px;
-  position: absolute;
-  object-fit: cover;
-  z-index: 0;
-  opacity: .7;
-  transition: all .5s;
+  height: 280px;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
-.collectionGridItem:hover .imgProductGrid {
-  width: 120%;
-  height: 120%;
+.imgProductGrid img { 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .2s;
+}
+.imgProductGrid:hover img {
+  transform: scale(1.2);
 }
 .collectionGridName {
   position: relative;
@@ -232,7 +231,7 @@ body {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  height: 380px;
+  height: auto;
   margin-bottom: 50px;
   display: inherit;
 }
@@ -251,6 +250,35 @@ body {
   color: #fff;
   cursor: pointer;
   border-radius: 30px;
+}
+.info, .flyer {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.flyer {
+  width: 70%;
+}
+.info {
+  width: 30%;
+  padding: 20px 10px;
+  border-top:5px solid #f55700;
+  border-bottom:5px solid #f55700
+}
+.info img, .flyer img {
+  max-width: 100%;
+}
+.rowItems {
+  margin: 0 auto;
+  width: 350px;
+  text-align: center;
+}
+.itemName {
+  text-align: center;
+  width: 100px;
+  margin: 0 3px 0px 12px;
+  display: inline-block;
+  vertical-align: top;
 }
 @media(min-width:1025px) {
   .productGridItem:hover .productMask {

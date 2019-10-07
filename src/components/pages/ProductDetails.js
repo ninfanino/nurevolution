@@ -5,11 +5,12 @@ import ProductInfo from '../collections/productInfo';
 
 
 const ProductDetails = (props) => {
-    const line = props.match.params.name
+    const line = props.match.params.name;
+    const collection = props.match.params.collection;
     return(
         <div>
             <Header/>
-            <ProductInfo line={line}/>
+            <ProductInfo line={line} collection={collection}/>
             <Footer/>
         </div>
     )

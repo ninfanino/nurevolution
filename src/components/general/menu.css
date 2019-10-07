@@ -22,4 +22,11 @@
     background-color: currentColor;
   }
   
-  
+.Menu a {
+  text-decoration: none;
+  color: #535353;
+}
+
+.Menu a:hover, .Menu a:active {
+  color: #f55700;
+}

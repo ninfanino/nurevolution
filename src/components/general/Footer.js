@@ -17,7 +17,6 @@ const Footer = () => (
                 <li>Product Lines</li>
                 <li>Events</li>
                 <li>Marketing Materials</li>
-                <li>Tutorials</li>
                 <li>MSDS</li>
             </ul>
         </div>
@@ -26,7 +25,8 @@ const Footer = () => (
             <div className="titleFooter">ABOUT US</div>
             <ul className="menuFooter">
                 <li>Our Company</li>
-                <li>Our Team</li>
+                <li>Our Teams</li>
+                <li>NuRevolution Educators</li>
                 <li>Contact</li>
                 <li>FAQ</li>
             </ul>

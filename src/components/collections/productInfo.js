@@ -1,9 +1,9 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+
 
 const ProductInfo = (props) => {
-    const { line } = props
-    const collection =  {
+    const { line, collection } = props;
+    const collections =  {
             'gel': [
                 { 
                     name:'Collections NU-01 Trio',
@@ -42,56 +42,24 @@ const ProductInfo = (props) => {
                     photo: 'collectionsNU-09tiedye.jpg'
                 }
             ],
-            'dipping-power' : [
-                { 
-                    name:'Collections NUdippingpwder-00 Diamond',
-                    photo: 'collectionsNUdippingpwder-00diamond.jpg'
-                },
-                { 
-                    name:'Collections NUdippingpwder-01 Trio',
-                    photo: 'collectionsNUdippingpwder-01trio.jpg'
-                },
-                { 
-                    name:'Collections NUdippingpwder-02 Pure Chrome',
-                    photo: 'collectionsNUdippingpwder-02purechrome.jpg'
-                },
-                { 
-                    name:'Collections NUdippingpwder-03 High Voltage',
-                    photo: 'collectionsNUdippingpwder-03highvoltage.jpg'
-                },
-                { 
-                    name:'Collections NUdippingpwder-05 Nudy Nude',
-                    photo: 'collectionsNUdippingpwder-05nudynude.jpg'
-                },
-                { 
-                    name:'Collections NUdippingpwder06 Pearl',
-                    photo: 'collectionsNUdippingpwder-06pearl.jpg'
-                },
-                { 
-                    name:'Collections NUdippingpwder-07 Holo Chrome',
-                    photo: 'collectionsNUdippingpwder-07holochrome.jpg'
-                },
-                { 
-                    name:'Collections NUdippingpwder-08 Temperature',
-                    photo: 'collectionsNUdippingpwder-08Temperature.jpg'
-                },
-                { 
-                    name:'Collections NUdippingpwder-09 Solar',
-                    photo: 'collectionsNUdippingpwder-09solar.jpg'
-                },
-                { 
-                    name:'Collections NUdippingpwder-10 Jolly',
-                    photo: 'collectionsNUdippingpwder-10jolly.jpg'
-                },
-                { 
-                    name:'Collections NUdippingpwder-11 opal',
-                    photo: 'collectionsNUdippingpwder-11opal.jpg'
-                },
-                { 
-                    name:'Collections NUdippingpwder-12 Starlet',
-                    photo: 'collectionsNUdippingpwder-12starlet.jpg'
+            'dipping-power' : {
+                'magical-magnetic' : {
+                    descripcion: 'Create a mystical light-catching Magical Magnetic effects that shifts colors under the change of light attracting all the attention',
+                    class: 'der',
+                    rows: 4,
+                    cols: 2,
+                    names : [
+                        'MM 11 charmed',
+                        'MM 12 mystic',
+                        'MM 13 moonglow',
+                        'MM 14 sorcery',
+                        'MM 15 divine',
+                        'MM 16 bewitched',
+                        'MM 17 illusion',
+                        'MM 18 dazed',
+                    ]
                 }
-            ],
+            },
             'bare-soak' : [
                 { 
                     name:'Collections NUbaresoak-01 Baresoak',
@@ -104,32 +72,50 @@ const ProductInfo = (props) => {
             ]
         }
     
-    let itemsCollection = collection[line].map((item, index) => {
-        return (
-            <div className="collectionGridItem" key={index}>
-                <NavLink to={"/product/" + line + "/" + index}>
-                    <img src={"/images/product-lines/" + line + "/" + item['photo'] } className="imgProductGrid" alt="Product Line" />
-                    <div className="collectionGridName">
-                        { item['name'] }
-                    </div>
-                </NavLink>
-            </div>
-        )
-    })
+    let itemsCollection = [];
+    let k = 0;
+    for(let i = 1; i <= collections[line][collection]['rows']; i++) {
+        itemsCollection.push(<img src={"/images/product-lines/" + line + "/" + collection + "/" + i + ".jpg"} alt="collection" />);
+        for(let j = 1; j <= collections[line][collection]['cols']; j++) {
+            itemsCollection.push(<div className="itemName">{ collections[line][collection]['names'][k] }</div>);
+            console.log(collections[line][collection]['names'][k]);
+            k++;
+        }
+    }
     
     return(
         <div className="promos">
-            <img className="img-slidder" src={"/images/product-lines/" + line + "/mainimage.jpg"} alt="NuRevolution" />
+            <img className="img-slidder" src={"/images/product-lines/" + line + "/" + collection + "/banner.jpg"} alt="collection" />
 
             <div className="container">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                </p>
-
-                <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/Xs6hnsPAAEY?playlist=Xs6hnsPAAEY&amp;iv_load_policy=3&amp;enablejsapi=1&amp;disablekb=1&amp;autoplay=0&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;wmode=transparent&amp;origin=https%3A%2F%2Fwww.nurevolutioninc.com&amp;widgetid=3" id="widget4" ></iframe>
-                
+                <video className="inner" controls>
+                    <source src={"/images/product-lines/" + line + "/" + collection + "/video.mov"} type="video/mp4" />
+                    
+                </video>
+            </div>    
                 <div className="collectionGrid">
-                    {itemsCollection}
+                    {
+                        collections[line][collection]['class'] === 'der' ?
+                            (
+                                <div>
+                                    <div className="info">
+                                        <img className="line-product" src={"/images/product-lines/" + line + "/" + collection + "/logo.jpg"} alt={collection} />
+                                        { collections[line][collection]['descripcion'] }
+
+                                        <div className="rowItems">
+                                            { itemsCollection }
+                                        </div>
+                                    </div> 
+                                    
+                                    <div className="flyer">
+                                    <img className="line-product" src={"/images/product-lines/" + line + "/" + collection + "/img.jpg"} alt={collection} />
+                                    </div>
+                                </div>
+                            ) : 
+                            (
+                                <div>Izq</div>
+                            )
+                    }
                 </div>
 
                 <div className="btnsContainer">
@@ -137,7 +123,7 @@ const ProductInfo = (props) => {
 
                     <div className="btnRound">Marketing Material</div>
                 </div>
-            </div>
+            
 
             
         </div>
