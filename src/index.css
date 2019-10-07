@@ -251,10 +251,23 @@ body {
   cursor: pointer;
   border-radius: 30px;
 }
+.der, .izq {
+  display: flex;
+  align-items: center;
+  
+}
+.der {
+  flex-direction: row;
+}
+.izq {
+  flex-direction: row-reverse;
+}
 .info, .flyer {
-  display: inline-block;
   box-sizing: border-box;
   vertical-align: middle;
+}
+.info {
+  display: table-cell;
 }
 .flyer {
   width: 70%;

@@ -58,6 +58,42 @@ const ProductInfo = (props) => {
                         'MM 17 illusion',
                         'MM 18 dazed',
                     ]
+                },
+                'twinkle' : {
+                    descripcion: 'Believe in the power of glitter and sparkle up those nails with your favorite Twinkle Collection',
+                    class: 'izq',
+                    rows: 4,
+                    cols: 2,
+                    names : [
+                        '25 Twinkle',
+                        '26 Blaze',
+                        '27 Dreamer',
+                        '28 Buttercup',
+                        '29 Tinsel',
+                        '30 Bliss',
+                        '31 Merry',
+                        '32 Twinkle',
+                    ]
+                },
+                'high-voltage' : {
+                    descripcion: 'Surge through the High Voltage Collection as you create your bold and neon designs by dipping or sculpting with these fine powders. These bright colors are sure to turn heads and catch a lot of bring attention!',
+                    class: 'der',
+                    rows: 4,
+                    cols: 3,
+                    names : [
+                        'HV-01 unplugged',
+                        'HV-02 tesla',
+                        'HV-03 heart beat',
+                        'HV-04 neon dreams',
+                        'HV-05 transformer',
+                        'HV-06 electric boom',
+                        'HV-07 limewire',
+                        'HV-08 kinetic energy',
+                        'HV-09 heart acid wash',
+                        'HV-10 neon shockwave',
+                        'HV-11 sparked!',
+                        'HV-12 amp!',
+                    ]
                 }
             },
             'bare-soak' : [
@@ -94,28 +130,19 @@ const ProductInfo = (props) => {
                 </video>
             </div>    
                 <div className="collectionGrid">
-                    {
-                        collections[line][collection]['class'] === 'der' ?
-                            (
-                                <div>
-                                    <div className="info">
-                                        <img className="line-product" src={"/images/product-lines/" + line + "/" + collection + "/logo.jpg"} alt={collection} />
-                                        { collections[line][collection]['descripcion'] }
-
-                                        <div className="rowItems">
-                                            { itemsCollection }
-                                        </div>
-                                    </div> 
-                                    
-                                    <div className="flyer">
-                                    <img className="line-product" src={"/images/product-lines/" + line + "/" + collection + "/img.jpg"} alt={collection} />
-                                    </div>
-                                </div>
-                            ) : 
-                            (
-                                <div>Izq</div>
-                            )
-                    }
+                    <div className={collections[line][collection]['class']}>
+                        <div className="info">
+                            <img className="line-product" src={"/images/product-lines/" + line + "/" + collection + "/logo.jpg"} alt={collection} />
+                            { collections[line][collection]['descripcion'] }
+                            <div className="rowItems">
+                                { itemsCollection }
+                            </div>
+                        </div> 
+           
+                        <div className="flyer">
+                            <img className="line-product" src={"/images/product-lines/" + line + "/" + collection + "/img.jpg"} alt={collection} />
+                        </div>
+                    </div>
                 </div>
 
                 <div className="btnsContainer">
