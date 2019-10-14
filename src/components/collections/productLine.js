@@ -110,8 +110,8 @@ const ProductLine = (props) => {
                 },
                 { 
                     name:'Bubble Tea',
-                    photo: 'nude-glow.png',
-                    url: 'nude-glow'
+                    photo: 'bubble-tea.png',
+                    url: 'bubble-tea'
                 },
                 { 
                     name:'Dream Collection',

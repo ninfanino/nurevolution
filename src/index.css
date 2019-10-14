@@ -251,10 +251,13 @@ body {
   cursor: pointer;
   border-radius: 30px;
 }
-.der, .izq {
+.der, .izq, .center {
   display: flex;
   align-items: center;
   
+}
+.center {
+  justify-content: center;
 }
 .der {
   flex-direction: row;
