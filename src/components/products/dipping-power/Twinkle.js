@@ -35,10 +35,8 @@ const Twinkle = () => {
             <Header/>
             <div className="promos">
                 <img className="img-slidder" src={"/images/product-lines/dipping-power/twinkle/banner.jpg"} alt="collection" />
-                <div className="container">
-                    <video className="inner" controls>
-                        <source src={"/images/product-lines/dipping-power/twinkle/video.mov"} type="video/mp4" />          
-                    </video>
+                <div className="iframe-container">
+                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/ViGlqDJN96A" title="Twinkle Collection"></iframe>
                 </div> 
 
                 <div className="collectionGrid">

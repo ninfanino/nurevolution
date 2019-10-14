@@ -296,6 +296,23 @@ body {
   display: inline-block;
   vertical-align: top;
 }
+.iframe-container {
+  position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 33%;
+    padding-top: 25px;
+    height: 0;
+    text-align: center;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 @media(min-width:1025px) {
   .productGridItem:hover .productMask {
     opacity: 1;
