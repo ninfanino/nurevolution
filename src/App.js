@@ -23,6 +23,7 @@ import LooseGlitter from './components/products/dipping-power/LooseGlitter';
 import Ombre from './components/products/dipping-power/Ombre';
 import Pearl from './components/products/dipping-power/Pearl';
 import RedSoul from './components/products/dipping-power/RedSoul';
+import Diamond from './components/products/dipping-power/Diamond';
 
 
 
@@ -53,6 +54,7 @@ function App() {
       <Route path="/product/dipping-power/ombre" component={Ombre} />
       <Route path="/product/dipping-power/pearl" component={Pearl} />
       <Route path="/product/dipping-power/red-soul" component={RedSoul} />
+      <Route path="/product/dipping-power/diamond" component={Diamond} />
     </Router>
   );
 }

@@ -36,14 +36,14 @@ const MagicalMagnetic = (props) => {
             <div className="promos">
                 <img className="img-slidder" src={"/images/product-lines/dipping-power/magical-magnetic/banner.jpg"} alt="collection" />
                 <div className="iframe-container">
-                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/ViGlqDJN96A" title="Twinkle Collection"></iframe>
+                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/guex8PFFJ6g" title="Magical Magnetic"></iframe>
                 </div> 
 
                 <div className="collectionGrid">
                     <div className="der">
                         <div className="info">
                             <img className="line-product" src={"/images/product-lines/dipping-power/magical-magnetic/logo.jpg"} alt="Magical Magnetic" />
-                            Create a mystical light-catching Magical Magnetic effects that shifts colors under the change of light attracting all the attention
+                            Create a mystical <b>light-catching</b> Magical Magnetic effects that <b>shifts colors</b> under the change of light <b>attracting all the attention</b>
                             <div className="rowItems">
                                 { itemsCollection }
                             </div>

@@ -36,14 +36,14 @@ const Twinkle = () => {
             <div className="promos">
                 <img className="img-slidder" src={"/images/product-lines/dipping-power/twinkle/banner.jpg"} alt="collection" />
                 <div className="iframe-container">
-                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/ViGlqDJN96A" title="Twinkle Collection"></iframe>
+                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/xY8LErGMOgg" title="Twinkle Collection"></iframe>
                 </div> 
 
                 <div className="collectionGrid">
                     <div className="izq">
                         <div className="info">
                             <img className="line-product" src={"/images/product-lines/dipping-power/twinkle/logo.jpg"} alt="Magical Magnetic" />
-                            Believe in the power of glitter and sparkle up those nails with your favorite Twinkle Collection
+                            Believe in the power of <b>glitter and sparkle</b> up those nails with your favorite <b>Twinkle Collection</b>
                             <div className="rowItems">
                                 { itemsCollection }
                             </div>
