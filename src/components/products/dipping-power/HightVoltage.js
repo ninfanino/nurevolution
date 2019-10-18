@@ -40,14 +40,14 @@ const HightVoltage = () => {
             <div className="promos">
                 <img className="img-slidder" src={"/images/product-lines/dipping-power/high-voltage/banner.jpg"} alt="collection" />
                 <div className="iframe-container">
-                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/ViGlqDJN96A" title="Twinkle Collection"></iframe>
+                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/tYbesdHEOlA" title="High Voltage Collection"></iframe>
                 </div>  
 
-                <div className="collectionGrid">
+                <div className="collectionGrid highVoltage">
                     <div className="der">
                         <div className="info">
                             <img className="line-product" src={"/images/product-lines/dipping-power/high-voltage/logo.jpg"} alt="Magical Magnetic" />
-                            Surge through the High Voltage Collection as you create your bold and neon designs by dipping or sculpting with these fine powders. These brigh colors are sure to turn heads and catch a lot of bring attention!
+                            Surge through the <b>High Voltage Collection</b> as you create your bold and neon designs by <b>dipping or sculpting</b> with these fine powders. These <b>brigh colors</b> are sure to turn heads and <b>catch a lot of bring attention!</b>
                             <div className="rowItems">
                                 { itemsCollection }
                             </div>

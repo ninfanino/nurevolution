@@ -40,7 +40,7 @@ const Jolly = () => {
             <div className="promos">
                 <img className="img-slidder" src={"/images/product-lines/dipping-power/jolly/banner.jpg"} alt="collection" />
                 <div className="iframe-container">
-                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/ViGlqDJN96A" title="Twinkle Collection"></iframe>
+                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/tYbesdHEOlA" title="Jolly Collection"></iframe>
                 </div> 
 
                 <div className="collectionGrid">

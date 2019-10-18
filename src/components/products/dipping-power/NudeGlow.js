@@ -37,12 +37,15 @@ const NudeGlow = () => {
                     <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/ViGlqDJN96A" title="Nude Glow Collection"></iframe>
                 </div>  
 
-                <div className="collectionGrid">
+                <div className="collectionGrid nudeGlow">
                     <div className="der">
                         <div className="info">
                             <img className="line-product" src={"/images/product-lines/dipping-power/nude-glow/logo.jpg"} alt="nude-glow" />
-                            Achieve a timeless day to night glow with our 6 Nude Glow shades.<br/>
-                            Keeping you classy in the AM while also electrifying up your night.
+                            
+                            <div class="gradientNudeGlow">
+                                <p>Achieve a timeless day to night glow with our <b>6 Nude Glow shades.</b><br/>
+                            Keeping you classy in the AM while also electrifying up your night.</p>
+                            </div>
                             <div className="rowItems">
                                 { itemsCollection }
                             </div>

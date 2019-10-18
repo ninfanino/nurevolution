@@ -40,15 +40,15 @@ const NudyNude = () => {
             <div className="promos">
                 <img className="img-slidder" src={"/images/product-lines/dipping-power/nudy-nude/banner.jpg"} alt="collection" />
                 <div className="iframe-container">
-                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/ViGlqDJN96A" title="Twinkle Collection"></iframe>
+                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/AO4bsTArWQ0" title="Nudy Nude Collection"></iframe>
                 </div>  
 
-                <div className="collectionGrid">
+                <div className="collectionGrid nudeNude">
                     <div className="izq">
                         <div className="info">
                             <img className="line-product" src={"/images/product-lines/dipping-power/nudy-nude/logo.jpg"} alt="Nudy Nude" />
-                            Strip down into your favorite nudes with this collection specially formulated to suit any of your nude fantasies. <br/>
-                            Our 2 in 1 power may be used as dip & acrylic to achieve any solid or Ombré goals.
+                            Strip down into your <b>favorite nudes</b> with this collection specially formulated to suit any of your <b>nude fantasies. </b><br/>
+                            Our <b>2 in 1 power</b> may be used as <b>dip & acrylic</b> to achieve any <b>solid or Ombré goals.</b>
                             <div className="rowItems">
                                 { itemsCollection }
                             </div>

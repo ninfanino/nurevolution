@@ -40,14 +40,14 @@ const Opal = () => {
             <div className="promos">
                 <img className="img-slidder" src={"/images/product-lines/dipping-power/opal/banner.jpg"} alt="collection" />
                 <div className="iframe-container">
-                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/ViGlqDJN96A" title="Twinkle Collection"></iframe>
+                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/f8eaEC2faWA" title="Opal Collection"></iframe>
                 </div>  
 
-                <div className="collectionGrid">
+                <div className="collectionGrid highVoltage">
                     <div className="der">
                         <div className="info">
                             <img className="line-product" src={"/images/product-lines/dipping-power/opal/logo.jpg"} alt="Opal" />
-                            Crack open the sheer beauty of opals with this collection designes to be used as dip or acrylic and let your shimmering dreams shine!
+                            Crack open the <b>sheer beauty of Opal</b> with this collection designes to be used as <b>dip or acrylic</b> and let your <b>shimmering dreams shine!</b>
                             <div className="rowItems">
                                 { itemsCollection }
                             </div>

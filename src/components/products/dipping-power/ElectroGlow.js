@@ -40,14 +40,14 @@ const ElectoGlow = () => {
             <div className="promos">
                 <img className="img-slidder" src={"/images/product-lines/dipping-power/electro-glow/banner.jpg"} alt="collection" />
                 <div className="iframe-container">
-                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/ViGlqDJN96A" title="Twinkle Collection"></iframe>
+                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/H02g8HZdPvE" title="Electro Glow Collection"></iframe>
                 </div> 
 
-                <div className="collectionGrid">
+                <div className="collectionGrid electroGlow">
                     <div className="der">
                         <div className="info">
                             <img className="line-product" src={"/images/product-lines/dipping-power/electro-glow/logo.jpg"} alt="electro-glow" />
-                            Let your creativity glow & electrify your style with the high-voltage Neon Collection.
+                            <p>Let your <b>creativity glow & electrify</b> your style with the <b>Electro Glow Collection.</b></p>
                             <div className="rowItems">
                                 { itemsCollection }
                             </div>

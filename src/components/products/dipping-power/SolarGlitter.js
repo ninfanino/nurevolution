@@ -40,15 +40,15 @@ const SolarGlitter = () => {
             <div className="promos">
                 <img className="img-slidder" src={"/images/product-lines/dipping-power/solar-glitter/banner.jpg"} alt="collection" />
                 <div className="iframe-container">
-                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/ViGlqDJN96A" title="Twinkle Collection"></iframe>
+                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/Keb_b8wCrn4" title="Solar Glitter Collection"></iframe>
                 </div> 
 
-                <div className="collectionGrid">
+                <div className="collectionGrid highVoltage">
                     <div className="der">
                         <div className="info">
                             <img className="line-product" src={"/images/product-lines/dipping-power/solar-glitter/logo.jpg"} alt="solar-glitter" />
-                            Add some sunshine to you finger tips with 12 different Solar Glitter color.<br/>
-                            Each color will transform under sunlight giving you a dazzling intriguing look.
+                            Add some <b>sunshine</b> to you finger tips with <b>12</b> different <b>Solar Glitter colors.</b><br/>
+                            Each color will <b>transform under sunlight</b> giving you a <b>dazzling intriguing look.</b>
                             <div className="rowItems">
                                 { itemsCollection }
                             </div>

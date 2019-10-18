@@ -40,14 +40,14 @@ const Starlet = () => {
             <div className="promos">
                 <img className="img-slidder" src={"/images/product-lines/dipping-power/starlet/banner.jpg"} alt="collection" />
                 <div className="iframe-container">
-                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/ViGlqDJN96A" title="Twinkle Collection"></iframe>
+                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/z0MIrZ7hzMs" title="Starlet Collection"></iframe>
                 </div> 
 
                 <div className="collectionGrid">
                     <div className="izq">
                         <div className="info">
                             <img className="line-product" src={"/images/product-lines/dipping-power/starlet/logo.jpg"} alt="starlet" />
-                            Step Onto The Scene With These Dazzling Colors Made For A Star Like You!  These powders can be used as Acrylic to form, or Dip into the perfectly elegant colors and watch your nails sparkle.
+                            Step Onto The Scene With These <b>Dazzling Colors</b> Made For A <b>Star Like You!</b>  These powders can be used as <b>Acrylic</b> to form, or <b>Dip</b> into the <b>perfectly elegant colors</b> and watch your <b>nails sparkle!</b>
                             <div className="rowItems">
                                 { itemsCollection }
                             </div>

@@ -40,14 +40,14 @@ const Temperature = () => {
             <div className="promos">
                 <img className="img-slidder" src={"/images/product-lines/dipping-power/temperature/banner.jpg"} alt="collection" />
                 <div className="iframe-container">
-                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/ViGlqDJN96A" title="Twinkle Collection"></iframe>
+                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/EBmnqRsFPqU" title="Temperature Collection"></iframe>
                 </div> 
 
-                <div className="collectionGrid">
+                <div className="collectionGrid temperature">
                     <div className="izq">
                         <div className="info">
                             <img className="line-product" src={"/images/product-lines/dipping-power/temperature/logo.jpg"} alt="temperature" />
-                            Prepare to be amazed and watch the magic happen before your eyes with this irresistibly fun heat activated colo-changing powder effect
+                            Prepare to be amazed and <b>watch the magic</b> happen before your eyes <b>with this irresistibly</b> fun heat activated <b>color-changing powder effect</b>
                             <div className="rowItems">
                                 { itemsCollection }
                             </div>
