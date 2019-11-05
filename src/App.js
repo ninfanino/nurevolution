@@ -24,6 +24,7 @@ import Ombre from './components/products/dipping-power/Ombre';
 import Pearl from './components/products/dipping-power/Pearl';
 import RedSoul from './components/products/dipping-power/RedSoul';
 import Diamond from './components/products/dipping-power/Diamond';
+import HoloChrome from './components/products/dipping-power/HoloChrome';
 
 
 
@@ -55,6 +56,7 @@ function App() {
       <Route path="/product/dipping-power/pearl" component={Pearl} />
       <Route path="/product/dipping-power/red-soul" component={RedSoul} />
       <Route path="/product/dipping-power/diamond" component={Diamond} />
+      <Route path="/product/dipping-power/holo-chrome" component={HoloChrome} />
     </Router>
   );
 }

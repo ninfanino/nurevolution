@@ -39,13 +39,15 @@ const Ombre = () => {
         <div>
             <Header/>
             <div className="promos">
-                
+            <div className="iframe-container">
+                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/J2Y6N_msD6M" title="Ombre Collection"></iframe>
+                </div>
 
-                <div className="collectionGrid">
+                <div className="collectionGrid ombre">
                     <div className="der">
                         <div className="info">
                             <img className="line-product" src={"/images/product-lines/dipping-power/ombre/logo.jpg"} alt="ombre" />
-                            Dip your nail into the newest color trend of Perfect Ombré
+                            Dip your nail into the <b>newest color</b> trend of <b>Perfect Ombré</b>
                             <div className="rowItems">
                                 { itemsCollection }
                             </div>

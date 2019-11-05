@@ -272,14 +272,45 @@ body {
 .info {
   display: table-cell;
 }
-.flyer {
-  width: 70%;
-}
+
 .info {
   width: 30%;
   padding: 20px 10px;
   border-top:5px solid #f55700;
   border-bottom:5px solid #f55700
+}
+.expand .izq {
+  width: 100%;
+}
+.expand .rowItems {
+  width: 700px;
+}
+.expand {
+    background: #312d2a;
+    color: #fff;
+    margin-bottom: 0;
+}
+.clearfix {
+  width: 350px;
+  height: 94px;
+  display: inline-block;
+}
+.expand .central .rowItems {
+  width: 1050px;
+}
+.expand .rowItems img {
+  width: 350px;
+  display: inline;
+}
+.flyer {
+  width: 70%;
+}
+.expand .info {
+  width: 65%;
+  border:none;
+}
+.expand .flyer {
+  width: 35%;
 }
 .info img, .flyer img {
   max-width: 100%;
@@ -335,8 +366,30 @@ body {
 .temperature .info {
   color: #be1e4a;
 }
+.redsoul .info {
+  color: #901d1a;
+}
 .electroGlow .info, .nudeGlow .info {
   padding: 0;
+}
+.bubbletea .info {
+  color: #eb7983;
+}
+.ombre .info {
+  color: #2674be;
+}
+.pearl .info {
+  color: #8a85bb;
+  padding: 0;
+  border:0;
+}
+.pearl .descripcion {
+  padding: 10px;
+}
+.pearl .rowItems {
+  background: #ecf6ee;
+  width: 100%;
+  padding: 20px 0px;
 }
 .electroGlow p { 
   padding: 20px 10px;
@@ -349,6 +402,10 @@ body {
   background: #1a0e24;
   color: #fff;
   width: 100%;
+}
+.looseGlitter .izq {
+  background: #312d2a;
+  color: #fff;
 }
 .nudeGlow .rowItems {
   background: linear-gradient(to right, #e24429 0%, #1f0b30 100%);

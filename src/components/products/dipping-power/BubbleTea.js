@@ -41,11 +41,11 @@ const BubbleTea = () => {
                 <img className="img-slidder" src={"/images/product-lines/dipping-power/bubble-tea/banner.jpg"} alt="collection" />
                 
 
-                <div className="collectionGrid">
-                    <div className="der">
+                <div className="collectionGrid bubbletea">
+                    <div className="izq">
                         <div className="info">
                             <img className="line-product" src={"/images/product-lines/dipping-power/bubble-tea/logo.jpg"} alt="bubble-tea" />
-                            Hold your favorite cup of bubble tea up with a bubblelicious set of nails inspired by your best-loved all year round refresher.
+                            Hold your favorite <b>cup of bubble tea</b> up with a <b>bubblelicious</b> set of nails inspired by your best-loved all year <b>round refresher.</b>
                             <div className="rowItems">
                                 { itemsCollection }
                             </div>

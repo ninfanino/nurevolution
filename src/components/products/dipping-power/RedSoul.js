@@ -39,12 +39,15 @@ const RedSoul = () => {
             <Header/>
             <div className="promos">
                 <img className="img-slidder" src={"/images/product-lines/dipping-power/red-soul/banner.jpg"} alt="collection" />
-                
-                <div className="collectionGrid">
+                <div className="iframe-container">
+                    <iframe className="inner" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/1o3x_7fAAJ0" title="Red Soul"></iframe>
+                </div> 
+
+                <div className="collectionGrid redsoul">
                     <div className="izq">
                         <div className="info">
                             <img className="line-product" src={"/images/product-lines/dipping-power/red-soul/logo.jpg"} alt="red-soul" />
-                            Empower yourself & let your inner Red Soul awaken with love, passion & desire.
+                            <b>Empower yourself</b> & let your inner <b>Red Soul</b> awaken with <b>love, passion & desire.</b>
                             <div className="rowItems">
                                 { itemsCollection }
                             </div>

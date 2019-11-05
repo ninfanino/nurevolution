@@ -42,11 +42,11 @@ const Lollipop = () => {
                 <img className="img-slidder" src={"/images/product-lines/dipping-power/lollipop/banner.jpg"} alt="collection" />
                 
 
-                <div className="collectionGrid">
+                <div className="collectionGrid highVoltage">
                     <div className="der">
                         <div className="info">
                             <img className="line-product" src={"/images/product-lines/dipping-power/lollipop/logo.jpg"} alt="lollipop" />
-                            Hit your sweet spot with this irresisitbly fun Lollipop Collection Inspired by colors of the rainbow
+                            Hit your <b>sweet spot</b> with this irresisitbly fun <b>Lollipop Collection</b> Inspired by the <b>colors</b> of the <b>rainbow</b>
                             <div className="rowItems">
                                 { itemsCollection }
                             </div>
