@@ -1,7 +1,37 @@
+@font-face {
+  font-family: 'Avenir Black';
+  src: url('/assets/AvenirLTStd-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('/assets/AvenirLTStd-Book.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Heavy';
+  src: url('/assets/AvenirLTStd-Heavy.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Light';
+  src: url('/assets/AvenirLTStd-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Medium';
+  src: url('/assets/AvenirLTStd-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Oblique';
+  src: url('/assets/AvenirLTStd-Oblique.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('/assets/AvenirLTStd-Roman.woff') format('woff');
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family:'Avenir';
 }
 
 .Header {

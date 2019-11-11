@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Avenir Black';
+  src: url('/assets/fonts/avenir/AvenirLTStd-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('/assets/fonts/avenir/AvenirLTStd-Book.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Heavy';
+  src: url('/assets/fonts/avenir/AvenirLTStd-Heavy.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Light';
+  src: url('/assets/fonts/avenir/AvenirLTStd-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Medium';
+  src: url('/assets/fonts/avenir/AvenirLTStd-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Oblique';
+  src: url('/assets/fonts/avenir/AvenirLTStd-Oblique.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('/assets/fonts/avenir/AvenirLTStd-Roman.woff') format('woff');
+}
+@font-face {
+    font-family: 'NovecentoLight';
+    src: url('/assets/fonts/novecento_light/novecentowide-light-webfont.eot');
+    src: url('/assets/fonts/novecento_light/novecentowide-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/novecento_light/novecentowide-light-webfont.woff') format('woff'),
+         url('/assets/fonts/novecento_light/novecentowide-light-webfont.ttf') format('truetype'),
+         url('/assets/fonts/novecento_light/novecentowide-light-webfont.svg#novecento_widelight') format('svg');
+    font-weight: normal;
+    font-style:  normal;
+}
+@font-face {
+    font-family: 'NovecentoNormal';
+    src: url('/assets/onts/novecento_normal/novecentowide-normal-webfont.eot');
+    src: url('/assets/fonts/novecento_normal/novecentowide-normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/novecento_normal/novecentowide-normal-webfont.svg#novecento_widenormal') format('svg'),
+         url('/assets/fonts/novecento_normal/novecentowide-normal-webfont.woff') format('woff'),
+         url('/assets/fonts/novecento_normal/novecentowide-normal-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style:  normal;
+}
+@font-face {
+    font-family: 'NovecentoBold';
+    src: url('/assets/fonts/novecento_bold/novecentowide-bold-webfont.eot');
+    src: url('/assets/fonts/novecento_bold/novecentowide-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/novecento_bold/novecentowide-bold-webfont.svg#novecento_wide_bookbold') format('svg'),
+         url('/assets/fonts/novecento_bold/novecentowide-bold-webfont.woff') format('woff'),
+         url('/assets/fonts/novecento_bold/novecentowide-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style:  normal;
+}
+@font-face {
+    font-family: 'novecentoDemiBold';
+    src: url('/assets/fonts/novecento_demibold/novecentowide-demibold-webfont.eot');
+    src: url('/assets/fonts/novecento_demibold/novecentowide-demibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/novecento_demibold/novecentowide-demibold-webfont.woff') format('woff'),
+         url('/assets/fonts/novecento_demibold/novecentowide-demibold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/novecento_demibold/novecentowide-demibold-webfont.svg#novecento_widedemibold') format('svg');
+    font-weight: normal;
+    font-style:  normal;
+}
+@font-face {
+    font-family: 'novecentoMedium';
+    src: url('/assets/fonts/novecento_medium/novecentowide-medium-webfont.eot');
+    src: url('/assets/fonts/novecento_medium/novecentowide-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/novecento_medium/novecentowide-medium-webfont.svg#novecento_widemedium') format('svg'),
+         url('/assets/fonts/novecento_medium/novecentowide-medium-webfont.woff') format('woff'),
+         url('/assets/fonts/novecento_medium/novecentowide-medium-webfont.ttf') format('truetype');     
+    font-weight: normal;
+    font-style:  normal;
+}
+@font-face {
+    font-family: 'novecentoBook';
+    src: url('novecentowide-book.eot');
+    src: url('/assets/fonts/novecento_book/novecentowide-book.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/novecento_book/novecentowide-book.svg#novecento_widebook') format('svg'),
+         url('/assets/fonts/novecento_book/novecentowide-book.woff') format('woff'),
+         url('/assets/fonts/novecento_book/novecentowide-book.ttf') format('truetype');   
+    font-weight: normal;
+    font-style:  normal;
+}
+@font-face {
+    font-family: 'KlavikaBold';
+    src: url('/assets/fonts/klavica_bold/klavikabold-webfont.eot');
+    src: url('/assets/fonts/klavica_bold/klavikabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/klavica_bold/klavikabold-webfont.svg#klavika_boldbold') format('svg'),
+         url('/assets/fonts/klavica_bold/klavikabold-webfont.woff') format('woff'),
+         url('/assets/fonts/klavica_bold/klavikabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KlavikaMedium';
+    src: url('/assets/fonts/klavika_medium_plain/klavikamedium-plain-webfont.eot');
+    src: url('/assets/fonts/klavika_medium_plain/klavikamedium-plain-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/klavika_medium_plain/klavikamedium-plain-webfont.svg#klavika_boldbold') format('svg'),
+         url('/assets/fonts/klavika_medium_plain/klavikamedium-plain-webfont.woff') format('woff'),
+         url('/assets/fonts/klavika_medium_plain/klavikamedium-plain-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KlavikaMedium';
+    src: url('/assets/fonts/klavika_medium_plain/klavikamedium-plain-webfont.eot');
+    src: url('/assets/fonts/klavika_medium_plain/klavikamedium-plain-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/klavika_medium_plain/klavikamedium-plain-webfont.svg#klavika_boldbold') format('svg'),
+         url('/assets/fonts/klavika_medium_plain/klavikamedium-plain-webfont.woff') format('woff'),
+         url('/assets/fonts/klavika_medium_plain/klavikamedium-plain-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'klavika_regular';
+    src: url('/assets/fonts/klavica_Regular/klavikaregular-plain-webfont.eot');
+    src: url('/assets/fonts/klavica_Regular/klavikaregular-plain-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/klavica_Regular/klavikaregular-plain-webfont.svg#klavika_regularplain') format('svg'),
+         url('/assets/fonts/klavica_Regular/klavikaregular-plain-webfont.woff') format('woff'),    
+         url('/assets/fonts/klavica_Regular/klavikaregular-plain-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

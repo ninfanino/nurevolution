@@ -14,14 +14,14 @@ const Products = () => (
                 </div>
             
 
-            <NavLink to="/product-line/dipping-power">
-                <div className="productGridItem">
+            
+                <div className="productGridItem"><NavLink to="/product-line/dipping-power">
                     <img src="/images/product-home2.jpg" className="imgProductHome" alt="Dipping Power" />
                     <div className="productMask">
                         <div className="nameProduct">Dipping<br/>power</div>
-                    </div>
+                    </div></NavLink>
                 </div>
-            </NavLink>
+            
 
             
                 <div className="productGridItem">
