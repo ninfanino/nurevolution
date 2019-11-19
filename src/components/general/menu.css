@@ -30,3 +30,94 @@
 .Menu a:hover, .Menu a:active {
   color: #f55700;
 }
+
+span {
+  display:block;
+  background:#566973;
+  border-radius:2px;
+}
+
+#menu-toggle {
+  width:40px;
+  height:40px;
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  cursor:pointer;
+  background:rgba(245,87,0,.7);
+  border-radius:5px;
+  transition:.25s ease-in-out;
+  box-sizing:border-box;
+  border: 0;
+}
+#menu-toggle:hover {
+  background:rgba(245,87,0,.4);
+}
+#hamburger {
+    position:absolute;
+    height:100%;
+    width:100%;
+    top: 0;
+    left: 0;
+}
+#hamburger span {
+  width: 30px;
+  height: 4px;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  margin: 5px 0 5px;
+  background: #fff;
+}
+#hamburger span:nth-child(1){
+        transition-delay:.5s;
+}
+#hamburger span:nth-child(2){
+        transition-delay:.625s;
+}
+#hamburger span:nth-child(3){
+        transition-delay:.75s;
+}
+#cross {
+    position:absolute;
+    height:100%;
+    width:100%;
+    transform:rotate(45deg);
+}
+#cross span:nth-child(1){
+        height:0%;
+        width:4px;
+        position:absolute;
+        top:10%;
+        left:48px;
+        transition-delay:0s;
+      }
+      #cross span:nth-child(2){
+        width:0%;
+        height:4px;
+        position:absolute;
+        left:10%;
+        top:48px;
+        transition-delay:.25s;
+      }
+  
+#menu-toggle.open #hamburger span {
+      width:0%;
+}
+#menu-toggle.open #hamburger span:nth-child(1){
+        transition-delay:0s;
+}
+#menu-toggle.open #hamburger span:nth-child(2){
+        transition-delay:.125s;
+}
+#menu-toggle.open #hamburger span:nth-child(3){
+        transition-delay:.25s;
+}
+#menu-toggle.open #cross span:nth-child(1){
+        height:80%;
+        transition-delay:.625s;
+      }
+#menu-toggle.open #cross span:nth-child(2){
+        width:80%;
+        transition-delay:.375s;
+  }

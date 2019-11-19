@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from "react-router-dom";
 
 const Footer = () => (
     <div className="Footer">
@@ -16,17 +17,17 @@ const Footer = () => (
             <ul className="menuFooter">
                 <li>Product Lines</li>
                 <li>Events</li>
-                <li>Marketing Materials</li>
-                <li>MSDS</li>
+                <li><a href="https://cp.sync.com/dl/fec55b400/k2ungk66-9rpf5i56-pv5bb3vq-6rr7c89f" target="_blank" rel="noopener noreferrer">Marketing Materials</a></li>
+                <li><a href="https://cp.sync.com/dl/e21e28fe0/s3s5edwh-83t74426-sen6cu7f-np6iiv55" target="_blank" rel="noopener noreferrer">MSDS</a></li>
             </ul>
         </div>
 
         <div className="colFooter">
             <div className="titleFooter">ABOUT US</div>
             <ul className="menuFooter">
-                <li>Our Company</li>
+                <li><NavLink to="/our-company">Our Company</NavLink></li>
                 <li>Our Teams</li>
-                <li>NuRevolution Educators</li>
+                <li><NavLink to="/educators">NuRevolution Educators</NavLink></li>
                 <li>Contact</li>
                 <li>FAQ</li>
             </ul>

@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Home from './components/pages/Home';
+import Educators from './components/pages/Educators';
 import DemoDays from './components/pages/DemoDays';
 import Promo from './components/pages/Promo';
 import ProductCollection from './components/pages/ProductCollection';
@@ -25,6 +26,7 @@ import Pearl from './components/products/dipping-power/Pearl';
 import RedSoul from './components/products/dipping-power/RedSoul';
 import Diamond from './components/products/dipping-power/Diamond';
 import HoloChrome from './components/products/dipping-power/HoloChrome';
+import OurCompany from './components/pages/OurCompany';
 
 
 
@@ -36,6 +38,8 @@ function App() {
       <Route path="/promo" component={Promo} />
       <Route path="/product-line/:name" component={ProductCollection} />
       <Route path="/demodays" component={DemoDays} />
+      <Route path="/educators" component={Educators} />
+      <Route path="/our-company" component={OurCompany} />
 
       <Route path="/product/dipping-power/magical-magnetic" component={MagicalMagnetic} />
       <Route path="/product/dipping-power/twinkle" component={Twinkle} />

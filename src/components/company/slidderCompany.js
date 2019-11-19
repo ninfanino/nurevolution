@@ -5,7 +5,7 @@ import makeCarousel from 'react-reveal/makeCarousel';
 import Slide from 'react-reveal/Slide';
 
 
-const Slidder = () => {
+const SlidderCompany = () => {
     
     const CarouselUI = ({ position, handleClick, children }) => (
         <div className="slidder">
@@ -59,4 +59,4 @@ const Slidder = () => {
 
 
 
-export default Slidder
+export default SlidderCompany

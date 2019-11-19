@@ -1,0 +1,19 @@
+.educatorsGrid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.educatorsGridItem {
+    max-width: 200px;
+    background: #efefef;
+    padding: 8px;
+    margin: 0px 20px 20px;
+}
+.imgEducatorGrid img {
+    width: 100%;
+    height: auto;
+}
+.educatorGridName {
+    padding: 10px;
+    text-align: center;
+}
