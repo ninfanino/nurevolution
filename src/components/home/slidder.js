@@ -11,8 +11,12 @@ const Slidder = () => {
         <div className="slidder">
             <div className="content-slidder">
                 {children}
-                <div className="arrow a-left" onClick={handleClick} data-position={position - 1}>{'<'}</div>
-                <div className="arrow a-right" onClick={handleClick} data-position={position + 1}>{'>'}</div>
+                <div className="arrow a-left" onClick={handleClick} data-position={position - 1}>
+                    <img className="arrow-slidder" src="/images/left-arrow.png" alt="Left" />
+                </div>
+                <div className="arrow a-right" onClick={handleClick} data-position={position + 1}>
+                    <img className="arrow-slidder" src="/images/right-arrow.png" alt="Right" />
+                </div>
                 <div style={{clear:'both'}}></div>
             </div>
         </div>

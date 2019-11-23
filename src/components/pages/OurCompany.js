@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../general/Header';
 import Footer from '../general/Footer';
-import './educators.css';
+import './company.css';
 import SlidderCompany from '../company/slidderCompany';
 
 const OurCompany = () => {
@@ -13,13 +13,13 @@ const OurCompany = () => {
     <React.Fragment>
         <Header/>
         
-        <div className="container">
+        <div className="container company">
             <div className="twoSections">
                 <div className="first-twoSections">
                     <div className="title text-uppercase">We are on a<br/>mision!</div>
                     <p>
                     NuRevolution is here to revolutionize the way professional nail, hand & feet beauty industry build their products.<br/>
-                    Among the world\'92s leading professional nail care companies, we exceed industry standards by offering only the highest quality products as we work closely with our distributors and customers to create the latest trend.
+                    Among the world's leading professional nail care companies, we exceed industry standards by offering only the highest quality products as we work closely with our distributors and customers to create the latest trend.
                     </p>
                 </div>
                 <div className="second-twoSections">
@@ -29,7 +29,7 @@ const OurCompany = () => {
 
             <div className="oneSection">
                 <div className="first-oneSection">
-                    <div className="title">Why choose us</div>
+                    <div className="title text-uppercase">Why<br/> choose us</div>
                     <p>
                     We have over 20 plus years of professional experience in the nail, hand & feet beauty industry.<br/>
                     </p>
@@ -57,10 +57,10 @@ const OurCompany = () => {
 
             <div className="oneSection">
                 <div className="first-oneSection">
-                    <div className="title">
+                    <div className="title text-uppercase">
                         Know the work
                     </div>
-                    <div className="title">
+                    <div className="subtitle text-uppercase">
                         of our collaborators
                     </div>
                 </div>

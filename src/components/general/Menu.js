@@ -33,7 +33,9 @@ class Menu extends Component {
                     </li>
                     <li>Tutorials</li>
                     <li>Find a Distribuitor</li>
-                    <li>Shop</li>
+                    <li>
+                    <a href="http://nurevolutionshop.com/" target="_blank" rel="noopener noreferrer">Shop</a>
+                    </li>
                 </ul>
             </React.Fragment>
         )
