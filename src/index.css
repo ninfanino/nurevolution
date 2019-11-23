@@ -350,6 +350,9 @@ body {
   width: 720px;
   border:none;
 }
+.expand .central {
+  width: 100%;
+}
 .expand .flyer {
   width: calc(100% - 720px);
 }
