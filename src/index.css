@@ -312,7 +312,9 @@ body {
 .info {
   display: table-cell;
 }
-
+.info .movil {
+  display: none;
+}
 .info {
   width: 400px;
   padding: 20px 10px;
@@ -329,12 +331,13 @@ body {
     margin-bottom: 0;
 }
 .clearfix {
-  width: 350px;
+  width: 33.33%;
   height: 94px;
   display: inline-block;
 }
 .expand .central .rowItems {
-  width: 1050px;
+  width: 100%;
+  max-width: 1050px;
 }
 .expand .rowItems img {
   width: 350px;
@@ -449,6 +452,12 @@ body {
   background: #312d2a;
   color: #fff;
 }
+.looseGlitter .central .rowItems img {
+  width: 33.33%;
+}
+.looseGlitter .central .rowItems .itemName {
+  width: 93px;
+}
 .nudeGlow .rowItems {
   background: linear-gradient(to right, #e24429 0%, #1f0b30 100%);
   color: #fff;
@@ -495,6 +504,8 @@ body {
   padding: 10px;
   margin-top: 20px;
   display: inline;
+}
+@media(max-width:1066px) {
 }
 @media(min-width:1025px) {
   .productGridItem:hover .productMask {
@@ -570,6 +581,14 @@ body {
   .expand .info, .expand .flyer, .expand .line-product {
     width: 100%;
   }
+  .expand .info {
+    padding: 20px 0;
+  }
+  .looseGlitter .central .rowItems .itemName {
+    width: calc(100% / 9);
+    box-sizing: border-box;
+    margin: 0;
+  }
 }
 @media(max-width:767px) {
   .productsGrid {
@@ -601,11 +620,25 @@ body {
   .der, .izq {
     flex-wrap: wrap;
   }
-  .info, .flyer {
+  .info, .flyer, .looseGlitter .central .rowItems img {
     width: 100%;
   }
   .info {
     padding: 20px 30px;
+  }
+  .info .pc {
+    display: none;
+  }
+  .info .movil {
+    max-width: 350px !important;
+    margin: 0 auto;
+    display: block;
+  }
+  .looseGlitter .info .movil .itemName{
+    margin: 0;
+  }
+  .looseGlitter .info .movil .itemName {
+    width: 33.33%;
   }
 }
 @media(max-width:575px) {

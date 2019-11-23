@@ -119,6 +119,7 @@ const HoloChrome = () => {
     }
 
     let itemsCollection = [];
+    let itemsCollectionM = [];
     let k2 = 0;
     for(let i = 1; i <= collections['rows']; i++) {
         itemsCollection.push(<img src={"/images/product-lines/dipping-power/loose-glitter/" + i + ".jpg"} alt="collection" />);
@@ -129,7 +130,25 @@ const HoloChrome = () => {
         }
     }
 
+    let l = 0;
+    for(let i = 1; i <= collections['rows']; i++) {
+        itemsCollectionM.push(<img src={"/images/product-lines/dipping-power/loose-glitter/" + i + ".jpg"} alt="collection" />);
+        
+        for(let j = 1; j <= (collections['cols']/2); j++) {
+            itemsCollectionM.push(<div className="itemName">{ collections['names'][l] }</div>);
+            l++;
+        }
+
+        itemsCollectionM.push(<img src={"/images/product-lines/dipping-power/loose-glitter/" + i + "b.jpg"} alt="collection" />);
+
+        for(let j = 1; j <= (collections['cols']/2); j++) {
+            itemsCollectionM.push(<div className="itemName">{ collections['names'][l] }</div>);
+            l++;
+        }
+    }
+
     let itemsCollection2 = [];
+    let itemsCollection2M = [];
     let k = 0;
     for(let i2 = 8; i2 <= collections2['rows']; i2++) {
         itemsCollection2.push(<img src={"/images/product-lines/dipping-power/loose-glitter/" + i2 + ".jpg"} alt="collection" />);
@@ -146,6 +165,29 @@ const HoloChrome = () => {
         }
     }
 
+    let m = 0;
+    for(let i2 = 8; i2 <= collections2['rows']; i2++) {
+        itemsCollection2M.push(<img src={"/images/product-lines/dipping-power/loose-glitter/" + i2 + ".jpg"} alt="collection" />);
+        for(let j2 = 1; j2 <= (collections2['cols']/3); j2++) {
+            itemsCollection2M.push(<div className="itemName">{ collections2['names'][m] }</div>);
+            m++;
+        }
+
+        itemsCollection2M.push(<img src={"/images/product-lines/dipping-power/loose-glitter/" + i2 + "b.jpg"} alt="collection" />);
+        for(let j2 = 1; j2 <= (collections2['cols']/3); j2++) {
+            itemsCollection2M.push(<div className="itemName">{ collections2['names'][m] }</div>);
+            m++;
+        }
+
+        if(i2 < 14) {
+            itemsCollection2M.push(<img src={"/images/product-lines/dipping-power/loose-glitter/" + i2 + "c.jpg"} alt="collection" />);
+            for(let j2 = 1; j2 <= (collections2['cols']/3); j2++) {
+                itemsCollection2M.push(<div className="itemName">{ collections2['names'][m] }</div>);
+                m++;
+            }
+        } 
+    }
+
     return(
         <div>
             <Header/>
@@ -155,8 +197,12 @@ const HoloChrome = () => {
                 <div className="collectionGrid looseGlitter expand">
                     <div className="izq">
                         <div className="info">
-                            <div className="rowItems">
+                            <div className="rowItems pc">
                                 { itemsCollection }
+                            </div>
+
+                            <div className="rowItems movil">
+                               { itemsCollectionM }
                             </div>
                         </div> 
            
@@ -167,10 +213,14 @@ const HoloChrome = () => {
                 </div>
 
                 <div className="collectionGrid looseGlitter expand">
-                    <div className="central">
+                    <div className="central info">
                         
-                            <div className="rowItems">
+                            <div className="rowItems pc">
                                 { itemsCollection2 }
+                            </div>
+
+                            <div className="rowItems movil">
+                               { itemsCollection2M }
                             </div>
                        
                     </div>

@@ -54,6 +54,7 @@ const HoloChrome = () => {
     }
 
     let itemsCollection = [];
+    let itemsCollectionM = [];
     let k = 0;
     for(let i = 1; i <= collections['rows']; i++) {
         itemsCollection.push(<img src={"/images/product-lines/dipping-power/holo-chrome/" + i + ".jpg"} alt="collection" />);
@@ -62,6 +63,25 @@ const HoloChrome = () => {
             itemsCollection.push(<div className="itemName">{ collections['names'][k] }</div>);
             console.log(collections['names'][k]);
             k++;
+        }
+    }
+
+    let l = 0;
+    for(let i = 1; i <= collections['rows']; i++) {
+        itemsCollectionM.push(<img src={"/images/product-lines/dipping-power/holo-chrome/" + i + ".jpg"} alt="collection" />);
+        
+        for(let j = 1; j <= (collections['cols']/2); j++) {
+            itemsCollectionM.push(<div className="itemName">{ collections['names'][l] }</div>);
+            console.log(collections['names'][l]);
+            l++;
+        }
+
+        itemsCollectionM.push(<img src={"/images/product-lines/dipping-power/holo-chrome/" + i + "b.jpg"} alt="collection" />);
+
+        for(let j = 1; j <= (collections['cols']/2); j++) {
+            itemsCollectionM.push(<div className="itemName">{ collections['names'][l] }</div>);
+            console.log(collections['names'][l]);
+            l++;
         }
     }
 
@@ -74,8 +94,12 @@ const HoloChrome = () => {
                 <div className="collectionGrid expand">
                     <div className="izq">
                         <div className="info">
-                            <div className="rowItems">
+                            <div className="rowItems pc">
                                 { itemsCollection }
+                            </div>
+
+                            <div className="rowItems movil">
+                               { itemsCollectionM }
                             </div>
                         </div> 
            
