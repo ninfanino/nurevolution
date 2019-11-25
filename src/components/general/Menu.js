@@ -32,7 +32,7 @@ class Menu extends Component {
                         <NavLink to="/demodays">Demo Days</NavLink>
                     </li>
                     <li>Tutorials</li>
-                    <li>Find a Distribuitor</li>
+                    <li><NavLink to="/our-company">Find a Distribuitor</NavLink></li>
                     <li>
                     <a href="http://nurevolutionshop.com/" target="_blank" rel="noopener noreferrer">Shop</a>
                     </li>

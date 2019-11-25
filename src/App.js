@@ -27,6 +27,7 @@ import RedSoul from './components/products/dipping-power/RedSoul';
 import Diamond from './components/products/dipping-power/Diamond';
 import HoloChrome from './components/products/dipping-power/HoloChrome';
 import OurCompany from './components/pages/OurCompany';
+import Distributors from './components/pages/Distributors';
 
 
 
@@ -40,6 +41,7 @@ function App() {
       <Route path="/demodays" component={DemoDays} />
       <Route path="/educators" component={Educators} />
       <Route path="/our-company" component={OurCompany} />
+      <Route path="/distributors" component={Distributors} />
 
       <Route path="/product/dipping-power/magical-magnetic" component={MagicalMagnetic} />
       <Route path="/product/dipping-power/twinkle" component={Twinkle} />

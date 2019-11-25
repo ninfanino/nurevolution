@@ -6,7 +6,7 @@ const Footer = () => (
         <div className="colFooter">
             <div className="titleFooter">DISTRIBUTORS</div>
             <ul className="menuFooter">
-                <li>Find a distributor</li>
+                <li><NavLink to="/distributors">Find a distributor</NavLink></li>
                 <li>Salons</li>
                 <li>Become a Distributor</li>
             </ul>

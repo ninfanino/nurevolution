@@ -130,7 +130,7 @@ const ProductLine = (props) => {
                 },
                 { 
                     name:'Ombre',
-                    photo: 'loose-glitter.png',
+                    photo: 'ombre.png',
                     url: 'ombre'
                 },
                 { 
