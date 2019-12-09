@@ -49,3 +49,55 @@
     border-bottom:1px solid #ccc;
     padding: 5px;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr:nth-of-type(odd) {
+    background: #fffbfb;
+}
+td, th {
+    border: 1px solid #ccc;
+}
+@media (max-width:767px) {
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+    }
+    .infoDistributors thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+    }
+    .infoDistributors tr { border: 1px solid #ccc; }
+
+    .infoDistributors tr td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+    }
+    
+    td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+    }
+    
+    td:nth-of-type(1):before { content: "Name and address"; }
+	td:nth-of-type(2):before { content: "Phone numbers"; }
+	td:nth-of-type(3):before { content: "City"; }
+}
+@media (max-width:575px) {
+    .itemDistributor {
+        width: 100%;
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+}

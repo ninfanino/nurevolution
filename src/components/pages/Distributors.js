@@ -2,20 +2,13 @@ import React from 'react'
 import Header from '../general/Header';
 import Footer from '../general/Footer';
 import './distributors.css';
+import DistributorsData from './DistributorsData';
 
 const Distributors  = () => {
-    const info = [
-        {
-            name: 'ABC Nail & SPA',
-            address: '14841 Dillow St',
-            city: 'Westminster, CA 92683',
-            phone: '714-653-8885'
-        }
-    ];
+    
 
     let itemsDistributors = [];
-    console.log(typeof info)
-    info.forEach((item, key) => {
+    DistributorsData.forEach((item, key) => {
         console.log(item);
         itemsDistributors.push(<tr key={key}><td>{item.name}, {item.address}</td><td>{item.phone}</td><td>{item.city}</td></tr>);
     });
@@ -66,8 +59,10 @@ const Distributors  = () => {
                                 <th>Phone numbers</th>
                                 <th>City</th>
                             </tr>
-                            { itemsDistributors }
                         </thead>
+                        <tbody>
+                            { itemsDistributors }
+                        </tbody>
                     </table>
                 </div>
                 <Footer/>
