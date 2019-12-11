@@ -3,15 +3,35 @@ import Header from '../general/Header';
 import Footer from '../general/Footer';
 import './distributors.css';
 import DistributorsData from './DistributorsData';
+import L from 'leaflet';
 
-const Distributors  = () => {
-    
+class Distributors extends React.Component {
+    state = {
+        markers: [
+          { key: 'marker1', position: [51.5, -0.1], content: 'My first popup' },
+          { key: 'marker2', position: [51.51, -0.1], content: 'My second popup' },
+          { key: 'marker3', position: [51.49, -0.05], content: 'My third popup' },
+        ],
+    }
 
-    let itemsDistributors = [];
-    DistributorsData.forEach((item, key) => {
-        console.log(item);
-        itemsDistributors.push(<tr key={key}><td>{item.name}, {item.address}</td><td>{item.phone}</td><td>{item.city}</td></tr>);
-    });
+    componentDidMount() {
+        this.map = L.map('map', {
+        center: [49.8419, 24.0315],
+        zoom: 16,
+        layers: [
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            }),
+        ]
+        });
+    }
+
+    render() {
+        let itemsDistributors = [];
+        DistributorsData.forEach((item, key) => {
+            itemsDistributors.push(<tr key={key}><td>{item.name}, {item.address}</td><td>{item.phone}</td><td>{item.city}</td></tr>);
+        });
+
         return (
             <React.Fragment>
                 <Header/>
@@ -22,8 +42,8 @@ const Distributors  = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper rhoncus nisl, quis feugiat mi accumsan a.
                     </p>
                 </div>
-                <div className="mapContainer">
-                    Map
+                <div className="mapContainer" id="map">
+                
                 </div>
 
                 <div className="container">
@@ -34,18 +54,21 @@ const Distributors  = () => {
                     <div className="title text-left">Master Distributors</div>
                     <div className="gridDistributors">
                         <div className="itemDistributor">
-                            <div className="imageStore">Store Logo</div>
-                            <div className="storeName">Name and address</div>
+                            <div className="imageStore">
+                                <img src="/images/australia.png" className="imgMasterDistributor" alt="Infitity Nails & Beauty Supplies" />
+                            </div>
                         </div>
 
                         <div className="itemDistributor">
-                            <div className="imageStore">Store Logo</div>
-                            <div className="storeName">Name and address</div>
+                            <div className="imageStore">
+                                <img src="/images/canada.png" className="imgMasterDistributor" alt="Classique Beauty Supplies" />
+                            </div>
                         </div>
 
                         <div className="itemDistributor">
-                            <div className="imageStore">Store Logo</div>
-                            <div className="storeName">Name and address</div>
+                            <div className="imageStore">
+                                <img src="/images/singapore.png" className="imgMasterDistributor" alt="P.N.C. Singapore Traders PTE LTD" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -68,6 +91,7 @@ const Distributors  = () => {
                 <Footer/>
             </React.Fragment>
         )
+    }
 }
 
 export default Distributors
